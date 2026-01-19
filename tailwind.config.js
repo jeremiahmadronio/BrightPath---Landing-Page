@@ -1,0 +1,126 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
+      },
+      colors: {
+        navy: {
+          50: "#f0f4f8",
+          100: "#d9e2ec",
+          200: "#bcccdc",
+          300: "#9fb3c8",
+          400: "#829ab1",
+          500: "#627d98",
+          600: "#486581",
+          700: "#334e68",
+          800: "#243b53",
+          900: "#102a43",
+          DEFAULT: "#1a2332",
+          light: "#2c3b52",
+        },
+        green: {
+          50: "#effcf6",
+          100: "#c6f7e2",
+          200: "#8eedc7",
+          300: "#65d6ad",
+          400: "#3ebd93",
+          500: "#27ab83",
+          600: "#199473",
+          700: "#147d64",
+          800: "#0c6b58",
+          900: "#014d40",
+          DEFAULT: "#2d5016",
+          dark: "#1e360e",
+        },
+        gold: {
+          50: "#fbf9f1",
+          100: "#f5f0db",
+          200: "#ede0b6",
+          300: "#e3cf8f",
+          400: "#dcc488",
+          500: "#c9a961",
+          600: "#a68b4b",
+          700: "#856e3b",
+          800: "#66542e",
+          900: "#483c22",
+          DEFAULT: "#c9a961",
+          light: "#dcc488",
+        },
+        warm: {
+          white: "#fafaf8",
+          gray: "#e8e8e6",
+          100: "#f5f5f4",
+          200: "#e7e5e4",
+          300: "#d6d3d1",
+          400: "#a8a29e",
+          500: "#78716c",
+          600: "#57534e",
+          700: "#44403c",
+          800: "#292524",
+          900: "#1c1917",
+        },
+        charcoal: {
+          DEFAULT: "#2a2a2a",
+          light: "#4a4a4a",
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+          400: "#9ca3af",
+          500: "#6b7280",
+          600: "#4b5563",
+          700: "#374151",
+          800: "#1f2937",
+          900: "#111827",
+        },
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        noise:
+          'url(\'data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.05"/%3E%3C/svg%3E\')',
+      },
+      animation: {
+        "fade-in": "fadeIn 0.5s ease-out",
+        "slide-up": "slideUp 0.5s ease-out",
+        "scale-in": "scaleIn 0.3s ease-out",
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        float: "float 6s ease-in-out infinite",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(20px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        scaleIn: {
+          "0%": { transform: "scale(0.9)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.charcoal.DEFAULT"),
+            fontFamily: theme("fontFamily.sans").join(", "),
+          },
+        },
+      }),
+    },
+  },
+  plugins: [],
+};
