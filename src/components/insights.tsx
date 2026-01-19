@@ -10,7 +10,7 @@ const articles = [
     readTime: '8 min read',
     date: 'Oct 12, 2025',
     image:
-      'https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1507679799987-c73779587ccf.avif',
+      '/src/assets/photo-1507679799987-c73779587ccf.avif',
     featured: true,
   },
   {
@@ -20,7 +20,7 @@ const articles = [
     readTime: '5 min read',
     date: 'Sep 28, 2025',
     image:
-      'https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1497366216548-37526070297c.avif',
+      '/src/assets/photo-1497366216548-37526070297c.avif',
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const articles = [
     readTime: '6 min read',
     date: 'Sep 15, 2025',
     image:
-      'https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1486312338219-ce68d2c6f44d.avif',
+      '/src/assets/photo-1486312338219-ce68d2c6f44d.avif',
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const articles = [
     readTime: '4 min read',
     date: 'Aug 30, 2025 ',
     image:
-      'https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1550751827-4bd374c3f58b.avif',
+      '/src/assets/photo-1550751827-4bd374c3f58b.avif',
   },
 ]
 
