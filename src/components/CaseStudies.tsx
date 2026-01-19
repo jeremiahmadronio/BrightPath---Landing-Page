@@ -11,7 +11,7 @@ const cases = [
       { label: 'Cost Reduction', value: '$12M' },
     ],
     image:
-      '/src/assets/photo-1586528116311-ad8dd3c8310d.avif',
+      'https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1586528116311-ad8dd3c8310d.avif',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const cases = [
       { label: 'Uptime', value: '99.99%' },
     ],
     image:
-      '/src/assets/photo-1551288049-bebda4e38f71.avif',
+      'https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1551288049-bebda4e38f71.avif',
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const cases = [
       { label: 'Grid Efficiency', value: '92%' },
     ],
     image:
-      '/src/assets/photo-1473341304170-971dccb5ac1e.avif',
+      'https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1473341304170-971dccb5ac1e.avif',
   },
 ]
 
