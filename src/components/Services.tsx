@@ -15,7 +15,7 @@ const services: Service[] = [
     description:
       'We partner with C-suite executives to identify high-impact opportunities and eliminate strategic blind spots. Our data-driven approach delivers actionable roadmaps that drive 3-5 year growth trajectories, optimize resource allocation, and increase market share.',
     image:
-      '/src/assets/photo-1552664730-d307ca884978.avif',
+      '/photo-1552664730-d307ca884978.avif',
     quote:
       'True strategy is about making bold decisions that others avoid—turning constraints into competitive advantages.',
     align: 'left',
@@ -26,7 +26,7 @@ const services: Service[] = [
     description:
       'Technology that scales with precision. We architect enterprise-grade digital infrastructures that reduce operational costs by 30-40%, accelerate time-to-market, and create frictionless customer experiences. Our solutions integrate seamlessly with your existing systems while future-proofing your operations.',
     image:
-      '/src/assets/photo-1519389950473-47ba0277781c.avif',
+      '/photo-1519389950473-47ba0277781c.avif',
     align: 'right',
   },
   {
@@ -35,7 +35,7 @@ const services: Service[] = [
     description:
       'Controlled experimentation that generates revenue. Our innovation framework combines design thinking with lean methodologies to rapidly test, validate, and scale new revenue streams. From concept to commercialization in 90 days—with built-in risk mitigation and measurable KPIs at every stage.',
     image:
-      '/src/assets/photo-1531482615713-2afd69097998.avif',
+      '/photo-1531482615713-2afd69097998.avif',
     align: 'left',
   },
 ]
