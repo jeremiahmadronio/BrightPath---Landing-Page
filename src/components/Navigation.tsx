@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 export function Navigation() {
@@ -96,89 +95,41 @@ export function Navigation() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            <AnimatePresence mode="wait">
-              {isMobileMenuOpen ? (
-                <motion.div
-                  key="close"
-                  initial={{
-                    rotate: -90,
-                    opacity: 0,
-                  }}
-                  animate={{
-                    rotate: 0,
-                    opacity: 1,
-                  }}
-                  exit={{
-                    rotate: 90,
-                    opacity: 0,
-                  }}
-                >
-                  <X className="text-navy w-6 h-6" />
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="menu"
-                  initial={{
-                    rotate: 90,
-                    opacity: 0,
-                  }}
-                  animate={{
-                    rotate: 0,
-                    opacity: 1,
-                  }}
-                  exit={{
-                    rotate: -90,
-                    opacity: 0,
-                  }}
-                >
-                  <Menu
-                    className={`w-6 h-6 ${isScrolled ? 'text-navy' : 'text-white'}`}
-                  />
-                </motion.div>
-              )}
-            </AnimatePresence>
+            {isMobileMenuOpen ? (
+              <X className="text-navy w-6 h-6" />
+            ) : (
+              <Menu
+                className={`w-6 h-6 ${isScrolled ? 'text-navy' : 'text-white'}`}
+              />
+            )}
           </button>
         </div>
       </nav>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            transition={{ type: 'tween', duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-white md:hidden"
-          >
-            <div className="flex flex-col items-center justify-center h-full gap-8 px-6">
-              {navLinks.map((link, index) => (
-                <motion.a
-                  key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-3xl font-serif text-navy hover:text-gold transition-colors"
-                >
-                  {link.name}
-                </motion.a>
-              ))}
-              <motion.a
-                href="#contact"
-                onClick={(e) => handleNavClick(e, '#contact')}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: navLinks.length * 0.1 }}
-                className="mt-4 px-8 py-3 bg-navy text-white rounded-sm hover:bg-gold transition-colors"
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-white md:hidden animate-slide-in">
+          <div className="flex flex-col items-center justify-center h-full gap-8 px-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="text-3xl font-serif text-navy hover:text-gold transition-colors"
               >
-                Get Started
-              </motion.a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                {link.name}
+              </a>
+            ))}
+            <a
+              href="#contact"
+              onClick={(e) => handleNavClick(e, '#contact')}
+              className="mt-4 px-8 py-3 bg-navy text-white rounded-sm hover:bg-gold transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      )}
     </>
   )
 }

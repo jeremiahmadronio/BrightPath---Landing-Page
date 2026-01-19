@@ -82,6 +82,8 @@ export function Insights() {
                 src={articles[0].image}
                 alt={articles[0].title}
                 className="w-full h-full object-cover transform-gpu group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute top-6 left-6 z-20">
                 <span className="inline-block px-4 py-2 bg-white/95 backdrop-blur-sm text-navy text-xs font-bold tracking-widest uppercase shadow-sm">
@@ -123,6 +125,8 @@ export function Insights() {
                     src={article.image}
                     alt={article.title}
                     className="w-full h-full object-cover transform-gpu group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div>

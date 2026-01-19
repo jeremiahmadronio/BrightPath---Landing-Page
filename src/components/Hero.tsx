@@ -11,7 +11,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0 will-change-transform">
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/50 to-navy/90 z-10 pointer-events-none" />
         <img
-          src="https://brightpath-assets.sfo3.digitaloceanspaces.com/photo-1486406146926-c627a92ad1ab.avif"
+          src="/src/assets/photo-1486406146926-c627a92ad1ab.avif"
           alt="Modern architecture"
           className="w-full h-full object-cover transform-gpu"
           loading="eager"

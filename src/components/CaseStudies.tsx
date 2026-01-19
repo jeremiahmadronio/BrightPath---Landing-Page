@@ -92,6 +92,7 @@ export function CaseStudies() {
                         filter: hoveredIndex === index ? 'grayscale(0%)' : 'grayscale(15%)',
                       }}
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-60 pointer-events-none" />

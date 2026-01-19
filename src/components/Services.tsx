@@ -54,6 +54,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
             alt={service.title}
             className="w-full h-full object-cover transform-gpu group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
+            decoding="async"
           />
 
           <div

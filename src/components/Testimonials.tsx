@@ -67,6 +67,8 @@ export function Testimonials() {
                       src={item.image}
                       alt={item.author}
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div>
