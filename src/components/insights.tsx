@@ -10,7 +10,7 @@ const articles = [
     readTime: '8 min read',
     date: 'Oct 12, 2025',
     image:
-      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop',
+      '/src/assets/photo-1507679799987-c73779587ccf.avif',
     featured: true,
   },
   {
@@ -20,7 +20,7 @@ const articles = [
     readTime: '5 min read',
     date: 'Sep 28, 2025',
     image:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+      '/src/assets/photo-1497366216548-37526070297c.avif',
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const articles = [
     readTime: '6 min read',
     date: 'Sep 15, 2025',
     image:
-      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop',
+      '/src/assets/photo-1486312338219-ce68d2c6f44d.avif',
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const articles = [
     readTime: '4 min read',
     date: 'Aug 30, 2025 ',
     image:
-      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop',
+      '/src/assets/photo-1550751827-4bd374c3f58b.avif',
   },
 ]
 
@@ -49,7 +49,7 @@ export function Insights() {
       className="py-32 bg-white border-t border-navy/5 relative"
     >
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between items-end mb-16">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-6">
           <div>
             <div className="flex items-center gap-4 mb-4">
               <span className="h-px w-8 bg-gold" />

@@ -7,7 +7,7 @@ const testimonials = [
     author: 'Elena Rodriguez',
     role: 'CEO, Vertex Dynamics',
     image:
-      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop',
+      '/src/assets/photo-1573496359142-b8d87734a5a2.avif',
     companyLogo: 'Vertex',
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
     author: 'James Chen',
     role: 'Director of Innovation, FutureScale',
     image:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop',
+      '/src/assets/photo-1472099645785-5658abf4ff4e.avif',
     companyLogo: 'FutureScale',
   },
 ]
