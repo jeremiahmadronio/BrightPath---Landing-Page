@@ -3,27 +3,27 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "BrightPath didn't just advise us; they transformed how we think about our future. Their strategic foresight is unmatched in the industry.",
-    author: 'Elena Rodriguez',
-    role: 'CEO, Vertex Dynamics',
+      "Working with BrightPath was a game-changer for our supply chain operations. They helped us reduce costs by 45% while improving delivery times. Their team's expertise and hands-on approach made the entire transformation process smooth and efficient.",
+    author: 'Michael Rodriguez',
+    role: 'COO, Global Logistics Corp',
     image:
-      '/photo-1573496359142-b8d87734a5a2.avif',
-    companyLogo: 'Vertex',
+      '/photo-1472099645785-5658abf4ff4e.avif',
+    companyLogo: 'Global Logistics',
   },
   {
     id: 2,
     quote:
-      'The level of sophistication and depth they brought to our digital transformation initiative was extraordinary. A truly premium partnership.',
-    author: 'James Chen',
-    role: 'Director of Innovation, FutureScale',
+      'BrightPath helped us scale our infrastructure from 15 million to 60 million users without a hitch. Their cloud architecture expertise and strategic guidance were invaluable. We achieved 99.99% uptime and saved $18M annually in infrastructure costs.',
+    author: 'Sarah Chen',
+    role: 'CTO, FinTech Innovations',
     image:
-      '/photo-1472099645785-5658abf4ff4e.avif',
-    companyLogo: 'FutureScale',
+      '/photo-1573496359142-b8d87734a5a2.avif',
+    companyLogo: 'FinTech Innovations',
   },
 ]
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-32 bg-warm-white overflow-hidden relative">
+    <section id="testimonials" className="py-16 sm:py-24 md:py-32 bg-warm-white overflow-hidden relative">
       {/* Background Pattern */}
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -33,12 +33,12 @@ export function Testimonials() {
         }}
       ></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="text-center mb-24">
           <span className="text-gold font-medium tracking-widest uppercase text-sm block mb-4">
             Testimonials
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-navy">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-navy">
             Trusted by Visionaries
           </h2>
         </div>
@@ -56,7 +56,7 @@ export function Testimonials() {
                 </div>
 
                 <blockquote className="mb-10 relative z-10">
-                  <p className="text-2xl md:text-3xl font-serif italic text-navy leading-relaxed">
+                  <p className="text-xl md:text-2xl text-gray-800 leading-loose font-light">
                     "{item.quote}"
                   </p>
                 </blockquote>

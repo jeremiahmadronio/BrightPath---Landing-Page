@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ArrowRight, TrendingUp } from 'lucide-react'
+
 const cases = [
   {
     id: 1,
@@ -42,10 +43,19 @@ const cases = [
 export function CaseStudies() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
+  const handleCaseClick = (caseId: number) => {
+    const caseUrls = {
+      1: '/case-study-global-logistics.html',
+      2: '/case-study-fintech.html',
+      3: '/case-study-ecoenergy.html'
+    }
+    window.open(caseUrls[caseId as keyof typeof caseUrls], '_blank')
+  }
+
   return (
     <section
       id="case-studies"
-      className="py-32 bg-navy text-white relative overflow-hidden"
+        className="py-16 sm:py-24 md:py-32 bg-navy text-white relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 border-b border-white/10 pb-12">
@@ -56,20 +66,14 @@ export function CaseStudies() {
                 Case Studies
               </span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-serif text-white">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white">
               Impact in Action
             </h2>
           </div>
 
-          <a
-            href="#"
-            className="hidden md:flex items-center text-white/70 hover:text-gold transition-colors duration-200 mt-8 md:mt-0 group"
-          >
-            <span className="border-b border-transparent group-hover:border-gold pb-0.5 transition-all duration-200">
-              View all cases
-            </span>
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-          </a>
+         
+           
+        
         </div>
 
         <div className="grid grid-cols-1 gap-32">
@@ -79,6 +83,7 @@ export function CaseStudies() {
               className="group cursor-pointer"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
+              onClick={() => handleCaseClick(study.id)}
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
                 <div className="lg:col-span-7 overflow-hidden rounded-lg relative will-change-transform">
@@ -109,15 +114,15 @@ export function CaseStudies() {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl md:text-5xl font-serif text-white mb-8 leading-tight group-hover:text-gold transition-colors duration-300">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6 md:mb-8 leading-tight group-hover:text-gold transition-colors duration-300">
                     {study.title}
                   </h3>
 
-                  <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8 mt-auto">
+                  <div className="grid grid-cols-2 gap-4 md:gap-8 border-t border-white/10 pt-6 md:pt-8 mt-auto">
                     {study.stats.map((stat, i) => (
                       <div key={i} className="relative">
                         <div className="flex items-baseline gap-1 mb-1">
-                          <p className="text-4xl md:text-5xl font-light text-white">
+                          <p className="text-3xl sm:text-4xl md:text-5xl font-light text-white">
                             {stat.value}
                           </p>
                           {i === 0 && (

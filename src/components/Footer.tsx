@@ -5,7 +5,20 @@ import {
   Instagram,
   ArrowUp,
 } from 'lucide-react'
+import { useEffect, useState } from 'react'
+
 export function Footer() {
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300)
+    }
+    
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,28 +39,28 @@ export function Footer() {
       {/* Background Noise */}
       <div className="absolute inset-0 bg-noise opacity-10 pointer-events-none mix-blend-overlay" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-24">
           <div className="md:col-span-5">
             <a
               href="#hero"
               onClick={(e) => handleNavClick(e, '#hero')}
-              className="text-4xl font-serif font-bold tracking-tight mb-8 block"
+              className="text-3xl sm:text-4xl font-serif font-bold tracking-tight mb-6 md:mb-8 block"
             >
               BrightPath<span className="text-gold">.</span>
             </a>
-            <p className="text-white/60 text-xl leading-relaxed max-w-md mb-12 font-light text-balance">
+            <p className="text-white/60 text-lg sm:text-xl leading-relaxed max-w-md mb-8 md:mb-12 font-light text-balance">
               Strategic consulting that transforms complexity into competitive advantage. Proven methodologies. Measurable outcomes. Lasting partnerships.
             </p>
             <div className="flex gap-6">
               {[Linkedin, Twitter, Instagram].map((Icon, i) => (
-                <a
+                <button
                   key={i}
-                  href="#"
                   className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:text-navy hover:bg-white hover:border-white transition-all duration-300 group"
+                  aria-label={`Social media ${i + 1}`}
                 >
                   <Icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                </a>
+                </button>
               ))}
             </div>
           </div>
@@ -134,10 +147,15 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/10 text-sm text-white/40">
-          <p>
-            &copy; {new Date().getFullYear()} BrightPath Consulting. All rights
-            reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <p>
+              &copy; {new Date().getFullYear()} BrightPath Consulting. All rights
+              reserved.
+            </p>
+            <p className="text-white/30 text-xs">
+              System created by <span className="text-gold/70 font-medium">Jeremiah Madronio</span>
+            </p>
+          </div>
 
           <div className="flex items-center gap-8 mt-6 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
@@ -157,6 +175,17 @@ export function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Floating Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-navy/90 hover:bg-gold text-white hover:text-navy shadow-2xl flex items-center justify-center transition-all duration-300 group backdrop-blur-sm border border-white/10 hover:border-gold z-[10000] animate-fade-in"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
+        </button>
+      )}
     </footer>
   )
 }
