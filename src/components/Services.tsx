@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import {  useCallback } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
 interface Service {
