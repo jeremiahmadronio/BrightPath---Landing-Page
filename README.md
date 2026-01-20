@@ -1,6 +1,10 @@
 <div align="center">
 
-# 🌟 BrightPath Consulting
+#  BrightPath Consulting
+<a href="https://youtu.be/1Jw2yDQVAW8">
+  <img src="public/Gemini_Generated_Image_ptqt0rptqt0rptqt.png" alt="Landing Page Demo" width="600">
+</a>
+
 
 ### Strategic Growth & Digital Transformation Platform
 
