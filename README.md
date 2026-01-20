@@ -26,7 +26,6 @@
 
 - [Overview](#-overview)
 - [Features](#-features)
-- [Screenshots](#-screenshots)
 - [Technology Stack](#-technology-stack)
 - [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
@@ -58,11 +57,11 @@
 
 The platform features a **fully responsive and flexible architecture** that automatically adapts to any screen size:
 
-- 📱 **Mobile Devices** (320px - 768px): Touch-optimized interface with mobile-first design
-- 💻 **Tablets** (768px - 1024px): Optimized grid layouts and comfortable touch targets
-- 🖥️ **Laptops** (1024px - 1440px): Enhanced multi-column layouts with rich interactions
-- 🖥️ **Desktops** (1440px - 1920px): Full-width experience with maximum content visibility
-- 🎮 **Ultra-Wide & 4K** (1920px+): Adaptive containers that maintain readability
+-  **Mobile Devices** (320px - 768px): Touch-optimized interface with mobile-first design
+-  **Tablets** (768px - 1024px): Optimized grid layouts and comfortable touch targets
+-  **Laptops** (1024px - 1440px): Enhanced multi-column layouts with rich interactions
+-  **Desktops** (1440px - 1920px): Full-width experience with maximum content visibility
+-  **Ultra-Wide & 4K** (1920px+): Adaptive containers that maintain readability
 
 **Key Responsive Features:**
 - Fluid typography that scales with viewport size
@@ -98,22 +97,22 @@ The platform features a **fully responsive and flexible architecture** that auto
 <td width="50%">
 
 **Homepage**
-- 📊 Service overview cards
-- 📈 Featured case studies
-- 💬 Client testimonials
-- 📧 Newsletter signup
-- 📞 Contact modal
+-  Service overview cards
+-  Featured case studies
+-  Client testimonials
+-  Newsletter signup
+-  Contact modal
 
 </td>
 <td width="50%">
 
 **Content Pages**
-- 📰 Thought leadership articles
-- 📑 Detailed case studies
-- 🛠️ Service descriptions
-- 🎓 Educational resources
-- 📊 Data visualizations
-- 🎨 Rich media content
+-  Thought leadership articles
+-  Detailed case studies
+-  Service descriptions
+-  Educational resources
+-  Data visualizations
+-  Rich media content
 
 </td>
 </tr>
@@ -121,52 +120,30 @@ The platform features a **fully responsive and flexible architecture** that auto
 
 ### 🎨 **User Experience**
 
-- ⚡ **Lightning Fast**: Sub-second page loads with Vite
-- 📱 **Fully Responsive**: Perfectly adapts to any screen size - from 320px mobile to 4K displays
-- 📐 **Flexible Layouts**: Fluid grids and components that scale seamlessly across all viewports
-- 🔄 **Adaptive UI**: Smart breakpoints ensuring optimal layout at every device size
-- 🎭 **Smooth Animations**: Polished micro-interactions that work on all devices
-- 🔍 **SEO Ready**: Meta tags, structured data, sitemap
-- ♿ **Accessible**: Keyboard navigation, screen reader support
-- 🌙 **Modern Design**: Contemporary aesthetics with professional polish
+-  **Lightning Fast**: Sub-second page loads with Vite
+-  **Fully Responsive**: Perfectly adapts to any screen size - from 320px mobile to 4K displays
+-  **Flexible Layouts**: Fluid grids and components that scale seamlessly across all viewports
+-  **Adaptive UI**: Smart breakpoints ensuring optimal layout at every device size
+-  **Smooth Animations**: Polished micro-interactions that work on all devices
+-  **SEO Ready**: Meta tags, structured data, sitemap
+- **Accessible**: Keyboard navigation, screen reader support
+-  **Modern Design**: Contemporary aesthetics with professional polish
 
 ### 🛡️ **Technical Features**
 
-- 🔒 **Type Safety**: Full TypeScript coverage
-- 🧩 **Component Library**: Reusable, tested components
-- 📦 **Code Splitting**: Optimized bundle sizes
-- 🎯 **Lazy Loading**: On-demand resource loading
-- 🔄 **React Router**: Client-side navigation
-- 🎨 **Tailwind CSS**: Utility-first styling with responsive breakpoints
+-  **Type Safety**: Full TypeScript coverage
+-  **Component Library**: Reusable, tested components
+-  **Code Splitting**: Optimized bundle sizes
+-  **Lazy Loading**: On-demand resource loading
+-  **React Router**: Client-side navigation
+-  **Tailwind CSS**: Utility-first styling with responsive breakpoints
 - 📱 **Responsive Images**: Optimized AVIF formats with srcset for all screen sizes
-- 🧪 **ESLint**: Code quality enforcement
-- 📐 **Flexible Grid System**: Adapts from 1-column to 4-column layouts automatically
-- 🎯 **Breakpoint Management**: sm (640px), md (768px), lg (1024px), xl (1280px), 2xl (1536px)
-- 📏 **Fluid Spacing**: Responsive padding and margins that scale with viewport
+-  **ESLint**: Code quality enforcement
+-  **Flexible Grid System**: Adapts from 1-column to 4-column layouts automatically
+-  **Breakpoint Management**: sm (640px), md (768px), lg (1024px), xl (1280px), 2xl (1536px)
+-  **Fluid Spacing**: Responsive padding and margins that scale with viewport
 
----
 
-## 📸 Screenshots
-
-<div align="center">
-
-### Homepage
-![Homepage Hero](https://via.placeholder.com/800x400/0066cc/ffffff?text=Homepage+Hero+Section)
-
-### Services Section
-![Services](https://via.placeholder.com/800x400/00ccaa/ffffff?text=Services+Overview)
-
-### Case Studies
-![Case Studies](https://via.placeholder.com/800x400/6366f1/ffffff?text=Featured+Case+Studies)
-
-### Article Pages
-![Articles](https://via.placeholder.com/800x400/f59e0b/ffffff?text=Thought+Leadership+Articles)
-
-</div>
-
-> **Note**: Replace placeholder images with actual screenshots from your deployed site
-
----
 
 ## 🛠️ Technology Stack
 
