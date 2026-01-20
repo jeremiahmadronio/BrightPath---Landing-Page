@@ -60,12 +60,12 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 px-4">
           <a
             href="#services"
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-navy hover:bg-gold hover:text-white transition-colors duration-200 rounded-sm overflow-hidden will-change-transform"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-gold text-navy font-semibold hover:bg-white hover:text-navy transition-all duration-300 rounded-sm shadow-lg shadow-gold/20 hover:shadow-white/20"
           >
-            <span className="relative z-10 font-medium tracking-wide">
+            <span className="font-medium tracking-wide">
               Discover Our Expertise
             </span>
-            <ArrowRight className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
           </a>
 
           <a
@@ -74,20 +74,20 @@ export function Hero() {
               e.preventDefault()
               setIsModalOpen(true)
             }}
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-transparent border border-white/30 text-white hover:border-white transition-colors duration-200 rounded-sm will-change-transform cursor-pointer"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 rounded-sm cursor-pointer"
           >
             <span className="font-medium tracking-wide">Start a Conversation</span>
           </a>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4">
+      {/* Scroll Indicator - Hidden on mobile, shown on large screens */}
+      <div className="hidden lg:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-4">
         <span className="text-white/40 text-[10px] uppercase tracking-[0.2em] rotate-90 origin-center translate-y-8">
           Scroll
         </span>
-        <div className="w-[1px] h-24 bg-white/10 overflow-hidden mt-8">
-          <div className="w-full h-1/2 bg-gold" />
+        <div className="w-[1px] h-16 bg-white/10 overflow-hidden mt-8">
+          <div className="w-full h-1/2 bg-gold animate-pulse" />
         </div>
       </div>
     </section>

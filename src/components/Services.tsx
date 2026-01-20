@@ -1,4 +1,5 @@
-import {  useCallback } from 'react'
+import { useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
 
 interface Service {
@@ -120,14 +121,16 @@ function ServiceCard({
 }
 
 export function Services() {
+  const navigate = useNavigate()
+  
   const handleLearnMore = useCallback((serviceTitle: string) => {
     const serviceUrls: { [key: string]: string } = {
-      'Strategic Consulting': '/service-strategic-consulting.html',
-      'Digital Transformation': '/service-digital-transformation.html',
-      'Innovation Labs': '/service-innovation-labs.html'
+      'Strategic Consulting': '/services/strategic-consulting',
+      'Digital Transformation': '/services/digital-transformation',
+      'Innovation Labs': '/services/innovation-labs'
     }
-    window.open(serviceUrls[serviceTitle], '_blank')
-  }, [])
+    navigate(serviceUrls[serviceTitle])
+  }, [navigate])
 
   return (
     <>

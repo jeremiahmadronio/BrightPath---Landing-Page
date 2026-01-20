@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight, Clock, Calendar } from 'lucide-react'
 import { NewsletterModal } from './NewsletterModal'
 
@@ -15,7 +16,7 @@ const articles = [
     image:
       '/photo-1507679799987-c73779587ccf.avif',
     featured: true,
-    url: '/article-leadership.html',
+    url: '/articles/human-centric-leadership',
   },
   {
     id: 2,
@@ -25,7 +26,7 @@ const articles = [
     date: 'Nov 5, 2025',
     image:
       '/photo-1497366216548-37526070297c.avif',
-    url: '/article-sustainable-innovation.html',
+    url: '/articles/sustainable-innovation',
   },
   {
     id: 3,
@@ -35,7 +36,7 @@ const articles = [
     date: 'Nov 20, 2025',
     image:
       '/photo-1486312338219-ce68d2c6f44d.avif',
-    url: '/article-asymmetric-advantage.html',
+    url: '/articles/asymmetric-advantage',
   },
   {
     id: 4,
@@ -45,7 +46,7 @@ const articles = [
     date: 'Dec 8, 2025',
     image:
       '/photo-1550751827-4bd374c3f58b.avif',
-    url: '/article-digital-ethics.html',
+    url: '/articles/digital-ethics',
   },
 ]
 
@@ -117,15 +118,13 @@ export function Insights() {
                   <Clock className="w-4 h-4" /> {articles[0].readTime}
                 </span>
               </div>
-              <a
-                href={articles[0].url}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to={articles[0].url}
                 className="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white px-6 py-3 rounded-sm transition-all duration-200 transform hover:scale-105 font-medium"
               >
                 View Article
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -162,15 +161,13 @@ export function Insights() {
                   </div>
                 </div>
                 {article.url && (
-                  <a
-                    href={article.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to={article.url}
                     className="inline-flex items-center gap-2 text-navy hover:text-gold font-medium text-sm transition-colors duration-200 group"
                   >
                     View Article
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" />
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}

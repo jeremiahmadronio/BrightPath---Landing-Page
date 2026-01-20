@@ -1,6 +1,7 @@
 import { ArrowLeft, TrendingUp, Calendar, Users, Award, Zap } from 'lucide-react'
 import { useState } from 'react'
-import { ContactModal } from '../components/ContactModal'
+import { Link } from 'react-router-dom'
+import { ContactModal } from '../../components/ContactModal'
 
 
 export function CaseStudyFinTech() {
@@ -16,13 +17,13 @@ export function CaseStudyFinTech() {
         {/* Navigation Bar */}
         <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-navy/10 z-50">
           <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="flex items-center gap-2 text-navy hover:text-gold transition-colors duration-200"
             >
               <ArrowLeft className="w-5 h-5" />
               <span className="font-medium">Back to Home</span>
-            </a>
+            </Link>
           </div>
         </nav>
 

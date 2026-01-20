@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { ArrowRight, TrendingUp } from 'lucide-react'
 
 const cases = [
@@ -42,14 +43,15 @@ const cases = [
 
 export function CaseStudies() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const navigate = useNavigate()
 
   const handleCaseClick = (caseId: number) => {
     const caseUrls = {
-      1: '/case-study-global-logistics.html',
-      2: '/case-study-fintech.html',
-      3: '/case-study-ecoenergy.html'
+      1: '/case-studies/global-logistics',
+      2: '/case-studies/fintech',
+      3: '/case-studies/ecoenergy'
     }
-    window.open(caseUrls[caseId as keyof typeof caseUrls], '_blank')
+    navigate(caseUrls[caseId as keyof typeof caseUrls])
   }
 
   return (
