@@ -4,7 +4,7 @@
 
 ### Strategic Growth & Digital Transformation Platform
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-0066cc?style=for-the-badge)](https://bright-path-landing-page.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-0066cc?style=for-the-badge)](https://bright-path-strategic-vision.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -991,7 +991,7 @@ See the [LICENSE](LICENSE) file for full details.
 
 ### Project Links
 
-- 🌍 **Live Demo**: [bright-path-landing-page.vercel.app](https://bright-path-landing-page.vercel.app)
+- 🌍 **Live Demo**: [bright-path-landing-page.vercel.app](https://bright-path-strategic-vision.vercel.app/)
 - 📦 **Repository**: [github.com/jeremiahmadronio/BrightPath---Landing-Page](https://github.com/jeremiahmadronio/BrightPath---Landing-Page)
 - 🐛 **Issues**: [github.com/jeremiahmadronio/BrightPath---Landing-Page/issues](https://github.com/jeremiahmadronio/BrightPath---Landing-Page/issues)
 - 📋 **Discussions**: [github.com/jeremiahmadronio/BrightPath---Landing-Page/discussions](https://github.com/jeremiahmadronio/BrightPath---Landing-Page/discussions)
